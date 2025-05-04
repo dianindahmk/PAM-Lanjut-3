@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.pamlanjut3.data.DummyData // pastikan ini mengarah ke file DummyData.kt
+import com.example.pamlanjut3.data.DummyData
 import com.example.pamlanjut3.model.User
 
 class MainActivity : ComponentActivity() {
@@ -43,7 +43,7 @@ fun UserListScreen() {
             modifier = Modifier.padding(bottom = 16.dp)
         )
         LazyColumn {
-            items(DummyData.userList) { user -> // <-- diperbaiki di sini
+            items(DummyData.userList) { user ->
                 UserItem(user)
             }
         }
